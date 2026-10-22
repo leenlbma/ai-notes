@@ -1,0 +1,149 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>仍然是一个亲手创造东西的人 | AI 手记</title><meta name="description" content="一个 16 年互联网人的 2026 AI 手记：创造、交付、组织效率、经验与人才，以及仍然想亲手创造东西的自己。"><link rel="canonical" href="https://leenlbma.github.io/ai-notes/">
+<meta property="og:type" content="article"><meta property="og:title" content="仍然是一个亲手创造东西的人 | AI 手记"><meta property="og:description" content="一个 16 年互联网人的 2026 AI 手记：创造、交付、组织效率、经验与人才，以及仍然想亲手创造东西的自己。"><meta property="og:url" content="https://leenlbma.github.io/ai-notes/"><meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary"><meta name="twitter:title" content="仍然是一个亲手创造东西的人 | AI 手记"><meta name="twitter:description" content="一个 16 年互联网人的 2026 AI 手记：创造、交付、组织效率、经验与人才，以及仍然想亲手创造东西的自己。">
+<meta name="author" content="Leen Ma"><link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+<style>
+:root{--bg:#f7f3ec;--fg:#1d1b18;--mute:#7a7266;--line:#d9d0c2;--acc:#a8472a;--acc2:#2c6a64;--paper:#fffdf8}
+@media(prefers-color-scheme:dark){:root{--bg:#121110;--fg:#ebe5da;--mute:#9a9183;--line:#3a352f;--acc:#e0875c;--acc2:#72b8ae;--paper:#1a1816}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--fg);font:18px/1.9 "PingFang SC","Hiragino Sans GB","Noto Sans SC","Noto Sans CJK SC","Microsoft YaHei",sans-serif;-webkit-font-smoothing:antialiased}
+.serif{font-family:"Noto Serif SC","Noto Serif CJK SC","Source Han Serif SC","Songti SC","STSong",serif}
+#bar{position:fixed;top:0;left:0;height:3px;width:0;background:var(--acc);z-index:20}
+.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:center;padding:10vh 8vw;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:-20%;background:radial-gradient(40% 40% at 75% 30%,color-mix(in srgb,var(--acc) 22%,transparent),transparent),radial-gradient(35% 35% at 20% 80%,color-mix(in srgb,var(--acc2) 18%,transparent),transparent);animation:drift 18s ease-in-out infinite alternate;z-index:-1}
+.hero:after{content:"";position:absolute;inset:0;opacity:.09;z-index:-1;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E")}
+@keyframes drift{to{transform:translate(4%,-3%) scale(1.08)}}
+.eyebrow{font-size:13px;letter-spacing:.4em;color:var(--acc)}
+.hero h1{font-size:clamp(40px,8.5vw,112px);line-height:1.18;font-weight:700;margin:.35em 0 .3em;letter-spacing:.02em}
+.hero .sub{font-size:clamp(17px,2.2vw,22px);color:var(--mute)}
+.scroll{position:absolute;bottom:5vh;left:8vw;font-size:13px;color:var(--mute);letter-spacing:.2em}
+nav{position:sticky;top:0;z-index:10;display:flex;gap:4px;justify-content:center;padding:10px;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav a{font:600 13px/1 sans-serif;color:var(--mute);text-decoration:none;padding:7px 12px;border-radius:99px}nav a.on{background:var(--fg);color:var(--bg)}
+.col{max-width:38em;margin:0 auto;padding:0 24px}
+p{margin:0 0 1.15em;text-align:justify}
+.pre{padding:12vh 0 4vh}.pre p:first-child{font-size:1.3em;line-height:1.7}
+.ch{padding:10vh 0 6vh}
+.open{min-height:70svh;display:flex;flex-direction:column;justify-content:center;max-width:1100px;margin:0 auto 8vh;padding:0 8vw;border-top:1px solid var(--line)}
+.num{font-size:clamp(96px,20vw,240px);line-height:1;color:transparent;-webkit-text-stroke:1.5px var(--acc);font-weight:700}
+.open h2{font-size:clamp(26px,4.4vw,48px);line-height:1.35;margin:.3em 0}
+.thesis{font-size:clamp(17px,2vw,21px);color:var(--acc);text-align:left;margin:0}
+.pq{margin:9vh -2vw;padding:0;font-size:clamp(24px,3.6vw,38px);line-height:1.55;font-weight:600;border:0;position:relative}
+.pq:before{content:"“";position:absolute;left:-.1em;top:-.55em;font-size:3em;color:var(--acc);opacity:.25}
+.fig{margin:7vh 0;padding:0}.fig svg{width:100%;height:auto;display:block}
+.fig figcaption{font-size:13px;color:var(--mute);text-align:center;margin-top:12px;letter-spacing:.1em}
+.t{font:15px sans-serif;fill:var(--fg)}.t.a{fill:var(--acc);font-weight:700}.t.s{font-size:13px;fill:var(--mute)}
+.coda{padding:12vh 0 0}
+.final{min-height:100svh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:10vh 8vw;background:var(--fg);color:var(--bg)}
+.final p{font-size:clamp(30px,6vw,72px);line-height:1.4;font-weight:700;text-align:center;margin:0}
+.final small{margin-top:5vh;letter-spacing:.4em;font-size:13px;opacity:.6}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .9s ease,transform .9s ease}.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.hero:before{animation:none}html{scroll-behavior:auto}}
+@media(max-width:600px){body{font-size:17px}.t{font-size:22px}.t.s{font-size:19px}.pq{margin:7vh 0}.open{min-height:60svh}p{text-align:left}}
+</style></head><body><div id="bar"></div>
+<header class="hero"><div class="eyebrow">AI 手记 · 01　/　2026</div><h1 class="serif">仍然是一个<br>亲手创造东西的人</h1><div class="sub">一个 16 年互联网人的 2026 AI 手记</div><div class="scroll">向下阅读 ↓</div></header>
+<nav><a href="#c01">01</a><a href="#c02">02</a><a href="#c03">03</a><a href="#c04">04</a><a href="#c05">05</a><a href="#c06">06</a></nav>
+<div class="col pre"><p class="rv">2026 年还没结束，但我已经很多年没有对一项技术如此着迷了。</p>
+<p class="rv">我在互联网行业工作了 16 年，经历过传统互联网、移动互联网，现在带着一支接近百人的 AI 团队，覆盖模型、算法、工程、产品、设计、数据和 AIGC 内容生产。</p>
+<p class="rv">白天做模型、Agent、AI 基础设施和业务交付，晚上自己 Vibe Coding，做产品、写文章、开源一些小项目。</p>
+<p class="rv">这一年最大的感受是：技术进步正在不断刷新个人能力的边界，但组织、商业和人的变化，远没有技术那么快。</p>
+<p class="rv">有些事情让我兴奋，有些事情让我困惑，还有一些事情，让我开始重新思考未来十年究竟想做什么。</p></div>
+<section id="c01" class="ch"><div class="open rv"><div class="num serif">01</div><h2 class="serif">创造的成本，第一次低到让我停不下来</h2><p class="thesis">真正稀缺的不是执行力，而是注意力。</p></div>
+<div class="col"><p class="rv">过去做一个产品，即使想法很简单，也需要考虑设计、研发资源和排期。很多想法不是没有价值，而是不值得动用一个团队去验证。</p>
+<p class="rv">现在，一个晚上就可能做出原型。</p>
+<p class="rv">今年我做了几个开源项目，也尝试了不少自己感兴趣的产品。从一个模糊的想法，到交互设计、代码实现，再到真正跑起来，很多时候只需要我和 AI 一起完成。</p>
+<p class="rv">这些东西未必有多大的商业价值，但我很享受从想法到产品的过程。</p>
+<p class="rv">做了这么多年管理，我重新找回了写代码的快乐。</p>
+<p class="rv">以前更多是在组织别人完成工作，现在很多事情可以自己动手。</p><figure class="fig rv"><svg viewBox="0 0 600 300"><g fill="var(--acc2)" opacity=".55"><circle cx="40" cy="30" r="4"/><circle cx="93" cy="67" r="5"/><circle cx="146" cy="104" r="6"/><circle cx="199" cy="51" r="7"/><circle cx="252" cy="88" r="4"/><circle cx="305" cy="35" r="5"/><circle cx="358" cy="72" r="6"/><circle cx="411" cy="109" r="7"/><circle cx="464" cy="56" r="4"/><circle cx="517" cy="93" r="5"/><circle cx="50" cy="40" r="6"/><circle cx="103" cy="77" r="7"/><circle cx="156" cy="114" r="4"/><circle cx="209" cy="61" r="5"/><circle cx="262" cy="98" r="6"/><circle cx="315" cy="45" r="7"/><circle cx="368" cy="82" r="4"/><circle cx="421" cy="119" r="5"/><circle cx="474" cy="66" r="6"/><circle cx="527" cy="103" r="7"/><circle cx="60" cy="50" r="4"/><circle cx="113" cy="87" r="5"/></g>
+<path d="M30 140 L570 140 L360 230 L240 230 Z" fill="none" stroke="var(--mute)" stroke-width="1.5"/><rect x="270" y="230" width="60" height="40" fill="var(--acc)"/>
+<text x="300" y="22" text-anchor="middle" class="t">太多想法值得尝试</text><text x="300" y="192" text-anchor="middle" class="t">注意力</text><text x="300" y="292" text-anchor="middle" class="t a">决定不做什么</text></svg><figcaption>想法爆炸，注意力是漏斗</figcaption></figure><p class="rv">AI 真正改变我的，不是写代码快了多少，而是大量原本不会发生的创造，现在有机会发生了。</p>
+<p class="rv">但副作用也很明显。</p>
+<p class="rv">我越来越难停下来。</p>
+<p class="rv">每天都有新模型、新工具、新想法。AI 节省下来的时间，很快又被新的项目填满。</p>
+<p class="rv">过去的问题是没有足够的能力实现想法，现在的问题是有太多想法值得尝试。</p>
+<p class="rv">我开始意识到，未来真正稀缺的可能不是执行力，而是注意力，以及决定不做什么的能力。</p><blockquote class="pq rv serif">未来真正稀缺的可能不是执行力，<br>而是注意力，以及决定不做什么的能力。</blockquote></div></section><section id="c02" class="ch"><div class="open rv"><div class="num serif">02</div><h2 class="serif">Demo 越来越容易，真正的交付依然很难</h2><p class="thesis">模型能完成一次任务，不代表它能稳定完成一万次。</p></div>
+<div class="col"><p class="rv">今年我们在模型、Agent、AIGC 和 AI 基础设施上投入了很多精力。</p>
+<p class="rv">模型能力进步很快，生成成本不断下降，很多过去需要复杂工程才能实现的功能，现在一个模型调用就能完成。</p>
+<p class="rv">但一旦进入生产环境，问题就变得具体了。</p>
+<p class="rv">生成一条视频不难，难的是商品不能失真、镜头之间要一致、客户修改局部内容时不能破坏其他部分。</p>
+<p class="rv">让 Agent 写代码不难，难的是理解整个系统、处理边界条件，以及在出现问题时能够定位和修复。</p>
+<p class="rv">模型能完成一次任务，不代表它能稳定完成一万次。</p><figure class="fig rv"><svg viewBox="0 0 600 300"><circle cx="70" cy="80" r="14" fill="var(--acc)"/><text x="70" y="125" text-anchor="middle" class="t">Demo · 一次</text>
+<path d="M100 80 H200" stroke="var(--mute)" stroke-dasharray="4 4"/><g fill="var(--acc2)"><rect x="215" y="55" width="6" height="6" opacity="0.35"/><rect x="224" y="55" width="6" height="6" opacity="0.44999999999999996"/><rect x="233" y="55" width="6" height="6" opacity="0.55"/><rect x="242" y="55" width="6" height="6" opacity="0.6499999999999999"/><rect x="251" y="55" width="6" height="6" opacity="0.75"/><rect x="260" y="55" width="6" height="6" opacity="0.85"/><rect x="269" y="55" width="6" height="6" opacity="0.95"/><rect x="278" y="55" width="6" height="6" opacity="0.35"/><rect x="287" y="55" width="6" height="6" opacity="0.44999999999999996"/><rect x="296" y="55" width="6" height="6" opacity="0.55"/><rect x="305" y="55" width="6" height="6" opacity="0.6499999999999999"/><rect x="314" y="55" width="6" height="6" opacity="0.75"/><rect x="323" y="55" width="6" height="6" opacity="0.85"/><rect x="332" y="55" width="6" height="6" opacity="0.95"/><rect x="341" y="55" width="6" height="6" opacity="0.35"/><rect x="350" y="55" width="6" height="6" opacity="0.44999999999999996"/><rect x="359" y="55" width="6" height="6" opacity="0.55"/><rect x="368" y="55" width="6" height="6" opacity="0.6499999999999999"/><rect x="377" y="55" width="6" height="6" opacity="0.75"/><rect x="386" y="55" width="6" height="6" opacity="0.85"/><rect x="395" y="55" width="6" height="6" opacity="0.95"/><rect x="404" y="55" width="6" height="6" opacity="0.35"/><rect x="413" y="55" width="6" height="6" opacity="0.44999999999999996"/><rect x="422" y="55" width="6" height="6" opacity="0.55"/><rect x="431" y="55" width="6" height="6" opacity="0.6499999999999999"/><rect x="440" y="55" width="6" height="6" opacity="0.75"/><rect x="449" y="55" width="6" height="6" opacity="0.85"/><rect x="458" y="55" width="6" height="6" opacity="0.95"/><rect x="467" y="55" width="6" height="6" opacity="0.35"/><rect x="476" y="55" width="6" height="6" opacity="0.44999999999999996"/><rect x="485" y="55" width="6" height="6" opacity="0.55"/><rect x="494" y="55" width="6" height="6" opacity="0.6499999999999999"/><rect x="503" y="55" width="6" height="6" opacity="0.75"/><rect x="512" y="55" width="6" height="6" opacity="0.85"/><rect x="521" y="55" width="6" height="6" opacity="0.95"/><rect x="530" y="55" width="6" height="6" opacity="0.35"/><rect x="539" y="55" width="6" height="6" opacity="0.44999999999999996"/><rect x="548" y="55" width="6" height="6" opacity="0.55"/><rect x="557" y="55" width="6" height="6" opacity="0.6499999999999999"/><rect x="566" y="55" width="6" height="6" opacity="0.75"/><rect x="215" y="64" width="6" height="6" opacity="0.85"/><rect x="224" y="64" width="6" height="6" opacity="0.95"/><rect x="233" y="64" width="6" height="6" opacity="0.35"/><rect x="242" y="64" width="6" height="6" opacity="0.44999999999999996"/><rect x="251" y="64" width="6" height="6" opacity="0.55"/><rect x="260" y="64" width="6" height="6" opacity="0.6499999999999999"/><rect x="269" y="64" width="6" height="6" opacity="0.75"/><rect x="278" y="64" width="6" height="6" opacity="0.85"/><rect x="287" y="64" width="6" height="6" opacity="0.95"/><rect x="296" y="64" width="6" height="6" opacity="0.35"/><rect x="305" y="64" width="6" height="6" opacity="0.44999999999999996"/><rect x="314" y="64" width="6" height="6" opacity="0.55"/><rect x="323" y="64" width="6" height="6" opacity="0.6499999999999999"/><rect x="332" y="64" width="6" height="6" opacity="0.75"/><rect x="341" y="64" width="6" height="6" opacity="0.85"/><rect x="350" y="64" width="6" height="6" opacity="0.95"/><rect x="359" y="64" width="6" height="6" opacity="0.35"/><rect x="368" y="64" width="6" height="6" opacity="0.44999999999999996"/><rect x="377" y="64" width="6" height="6" opacity="0.55"/><rect x="386" y="64" width="6" height="6" opacity="0.6499999999999999"/><rect x="395" y="64" width="6" height="6" opacity="0.75"/><rect x="404" y="64" width="6" height="6" opacity="0.85"/><rect x="413" y="64" width="6" height="6" opacity="0.95"/><rect x="422" y="64" width="6" height="6" opacity="0.35"/><rect x="431" y="64" width="6" height="6" opacity="0.44999999999999996"/><rect x="440" y="64" width="6" height="6" opacity="0.55"/><rect x="449" y="64" width="6" height="6" opacity="0.6499999999999999"/><rect x="458" y="64" width="6" height="6" opacity="0.75"/><rect x="467" y="64" width="6" height="6" opacity="0.85"/><rect x="476" y="64" width="6" height="6" opacity="0.95"/><rect x="485" y="64" width="6" height="6" opacity="0.35"/><rect x="494" y="64" width="6" height="6" opacity="0.44999999999999996"/><rect x="503" y="64" width="6" height="6" opacity="0.55"/><rect x="512" y="64" width="6" height="6" opacity="0.6499999999999999"/><rect x="521" y="64" width="6" height="6" opacity="0.75"/><rect x="530" y="64" width="6" height="6" opacity="0.85"/><rect x="539" y="64" width="6" height="6" opacity="0.95"/><rect x="548" y="64" width="6" height="6" opacity="0.35"/><rect x="557" y="64" width="6" height="6" opacity="0.44999999999999996"/><rect x="566" y="64" width="6" height="6" opacity="0.55"/><rect x="215" y="73" width="6" height="6" opacity="0.6499999999999999"/><rect x="224" y="73" width="6" height="6" opacity="0.75"/><rect x="233" y="73" width="6" height="6" opacity="0.85"/><rect x="242" y="73" width="6" height="6" opacity="0.95"/><rect x="251" y="73" width="6" height="6" opacity="0.35"/><rect x="260" y="73" width="6" height="6" opacity="0.44999999999999996"/><rect x="269" y="73" width="6" height="6" opacity="0.55"/><rect x="278" y="73" width="6" height="6" opacity="0.6499999999999999"/><rect x="287" y="73" width="6" height="6" opacity="0.75"/><rect x="296" y="73" width="6" height="6" opacity="0.85"/><rect x="305" y="73" width="6" height="6" opacity="0.95"/><rect x="314" y="73" width="6" height="6" opacity="0.35"/><rect x="323" y="73" width="6" height="6" opacity="0.44999999999999996"/><rect x="332" y="73" width="6" height="6" opacity="0.55"/><rect x="341" y="73" width="6" height="6" opacity="0.6499999999999999"/><rect x="350" y="73" width="6" height="6" opacity="0.75"/><rect x="359" y="73" width="6" height="6" opacity="0.85"/><rect x="368" y="73" width="6" height="6" opacity="0.95"/><rect x="377" y="73" width="6" height="6" opacity="0.35"/><rect x="386" y="73" width="6" height="6" opacity="0.44999999999999996"/><rect x="395" y="73" width="6" height="6" opacity="0.55"/><rect x="404" y="73" width="6" height="6" opacity="0.6499999999999999"/><rect x="413" y="73" width="6" height="6" opacity="0.75"/><rect x="422" y="73" width="6" height="6" opacity="0.85"/><rect x="431" y="73" width="6" height="6" opacity="0.95"/><rect x="440" y="73" width="6" height="6" opacity="0.35"/><rect x="449" y="73" width="6" height="6" opacity="0.44999999999999996"/><rect x="458" y="73" width="6" height="6" opacity="0.55"/><rect x="467" y="73" width="6" height="6" opacity="0.6499999999999999"/><rect x="476" y="73" width="6" height="6" opacity="0.75"/><rect x="485" y="73" width="6" height="6" opacity="0.85"/><rect x="494" y="73" width="6" height="6" opacity="0.95"/><rect x="503" y="73" width="6" height="6" opacity="0.35"/><rect x="512" y="73" width="6" height="6" opacity="0.44999999999999996"/><rect x="521" y="73" width="6" height="6" opacity="0.55"/><rect x="530" y="73" width="6" height="6" opacity="0.6499999999999999"/><rect x="539" y="73" width="6" height="6" opacity="0.75"/><rect x="548" y="73" width="6" height="6" opacity="0.85"/><rect x="557" y="73" width="6" height="6" opacity="0.95"/><rect x="566" y="73" width="6" height="6" opacity="0.35"/><rect x="215" y="82" width="6" height="6" opacity="0.44999999999999996"/><rect x="224" y="82" width="6" height="6" opacity="0.55"/><rect x="233" y="82" width="6" height="6" opacity="0.6499999999999999"/><rect x="242" y="82" width="6" height="6" opacity="0.75"/><rect x="251" y="82" width="6" height="6" opacity="0.85"/><rect x="260" y="82" width="6" height="6" opacity="0.95"/><rect x="269" y="82" width="6" height="6" opacity="0.35"/><rect x="278" y="82" width="6" height="6" opacity="0.44999999999999996"/><rect x="287" y="82" width="6" height="6" opacity="0.55"/><rect x="296" y="82" width="6" height="6" opacity="0.6499999999999999"/><rect x="305" y="82" width="6" height="6" opacity="0.75"/><rect x="314" y="82" width="6" height="6" opacity="0.85"/><rect x="323" y="82" width="6" height="6" opacity="0.95"/><rect x="332" y="82" width="6" height="6" opacity="0.35"/><rect x="341" y="82" width="6" height="6" opacity="0.44999999999999996"/><rect x="350" y="82" width="6" height="6" opacity="0.55"/><rect x="359" y="82" width="6" height="6" opacity="0.6499999999999999"/><rect x="368" y="82" width="6" height="6" opacity="0.75"/><rect x="377" y="82" width="6" height="6" opacity="0.85"/><rect x="386" y="82" width="6" height="6" opacity="0.95"/><rect x="395" y="82" width="6" height="6" opacity="0.35"/><rect x="404" y="82" width="6" height="6" opacity="0.44999999999999996"/><rect x="413" y="82" width="6" height="6" opacity="0.55"/><rect x="422" y="82" width="6" height="6" opacity="0.6499999999999999"/><rect x="431" y="82" width="6" height="6" opacity="0.75"/><rect x="440" y="82" width="6" height="6" opacity="0.85"/><rect x="449" y="82" width="6" height="6" opacity="0.95"/><rect x="458" y="82" width="6" height="6" opacity="0.35"/><rect x="467" y="82" width="6" height="6" opacity="0.44999999999999996"/><rect x="476" y="82" width="6" height="6" opacity="0.55"/><rect x="485" y="82" width="6" height="6" opacity="0.6499999999999999"/><rect x="494" y="82" width="6" height="6" opacity="0.75"/><rect x="503" y="82" width="6" height="6" opacity="0.85"/><rect x="512" y="82" width="6" height="6" opacity="0.95"/><rect x="521" y="82" width="6" height="6" opacity="0.35"/><rect x="530" y="82" width="6" height="6" opacity="0.44999999999999996"/><rect x="539" y="82" width="6" height="6" opacity="0.55"/><rect x="548" y="82" width="6" height="6" opacity="0.6499999999999999"/><rect x="557" y="82" width="6" height="6" opacity="0.75"/><rect x="566" y="82" width="6" height="6" opacity="0.85"/></g><text x="395" y="125" text-anchor="middle" class="t">生产 · 稳定完成一万次</text>
+<g class="t"><circle cx="150" cy="220" r="44" fill="none" stroke="var(--acc)" stroke-width="2"/><text x="150" y="226" text-anchor="middle">可靠</text>
+<circle cx="300" cy="220" r="44" fill="none" stroke="var(--acc)" stroke-width="2"/><text x="300" y="226" text-anchor="middle">可控</text>
+<circle cx="450" cy="220" r="44" fill="none" stroke="var(--acc)" stroke-width="2"/><text x="450" y="226" text-anchor="middle">可恢复</text></g></svg><figcaption>从一次到一万次：可靠 · 可控 · 可恢复</figcaption></figure><p class="rv">我现在看 AI 产品，越来越少关注 Demo 有多惊艳，更多关注三个问题：</p>
+<p class="rv">结果是否可靠，过程是否可控，失败以后能否恢复。</p>
+<p class="rv">还有一个容易被忽视的问题：模型能力进步得太快，工程方案的生命周期正在缩短。</p>
+<p class="rv">半年前需要复杂 Prompt、Workflow 和规则系统解决的问题，半年后可能直接交给模型就够了。</p>
+<p class="rv">这意味着我们一边建设系统，一边还要不断推翻过去的技术判断。</p>
+<p class="rv">过去工程追求稳定复用，现在还要学会判断哪些东西值得长期建设，哪些只是当前模型能力不足时的临时方案。</p><blockquote class="pq rv serif">结果是否可靠，过程是否可控，<br>失败以后能否恢复。</blockquote></div></section><section id="c03" class="ch"><div class="open rv"><div class="num serif">03</div><h2 class="serif">每个人都变快了，组织却没有同比例变快</h2><p class="thesis">组织效率并不是个人效率的简单相加。</p></div>
+<div class="col"><p class="rv">今年我推动团队全面使用 AI。</p>
+<p class="rv">工程师用 AI 编码，产品用 AI 做方案，设计师用 AI 探索交互，算法同学用 AI 辅助研发。</p>
+<p class="rv">个人效率的提升是可以感受到的。</p>
+<p class="rv">但一个很现实的问题出现了：</p>
+<p class="rv">为什么每个人都变快了，项目还是会延期？</p>
+<p class="rv">后来我发现，组织效率并不是个人效率的简单相加。</p>
+<p class="rv">工程师一天写完过去一周的代码，不代表测试、评审、集成和发布也能同步加速。</p><figure class="fig rv"><svg viewBox="0 0 600 300"><rect x="20" y="60" width="100" height="40" rx="6" fill="none" stroke="var(--mute)"/><text x="70" y="50" text-anchor="middle" class="t">编码</text><rect x="20" y="160" width="30" height="40" rx="6" fill="var(--acc2)" opacity="1"/><rect x="136" y="60" width="100" height="40" rx="6" fill="none" stroke="var(--mute)"/><text x="186" y="50" text-anchor="middle" class="t">测试</text><rect x="136" y="160" width="100" height="40" rx="6" fill="var(--acc)" opacity="0.75"/><rect x="252" y="60" width="100" height="40" rx="6" fill="none" stroke="var(--mute)"/><text x="302" y="50" text-anchor="middle" class="t">评审</text><rect x="252" y="160" width="100" height="40" rx="6" fill="var(--acc)" opacity="0.75"/><rect x="368" y="60" width="100" height="40" rx="6" fill="none" stroke="var(--mute)"/><text x="418" y="50" text-anchor="middle" class="t">集成</text><rect x="368" y="160" width="100" height="40" rx="6" fill="var(--acc)" opacity="0.75"/><rect x="484" y="60" width="100" height="40" rx="6" fill="none" stroke="var(--mute)"/><text x="534" y="50" text-anchor="middle" class="t">发布</text><rect x="484" y="160" width="100" height="40" rx="6" fill="var(--acc)" opacity="0.75"/><text x="300" y="240" text-anchor="middle" class="t">AI 之后：只有编码变短</text><text x="300" y="280" text-anchor="middle" class="t a">瓶颈移向下游 · 示意</text></svg><figcaption>只有编码变短，瓶颈移向下游（示意）</figcaption></figure><p class="rv">产品一天提出十个方案，可能只是让团队多了十个需要判断的选项。</p>
+<p class="rv">当内容生产越来越便宜，决策、验收和协调反而可能成为新的瓶颈。</p>
+<p class="rv">过去我们通过专业分工提高生产效率，形成了产品、设计、研发、测试等职能，以及配套的流程和管理机制。</p>
+<p class="rv">但当 AI 可以跨越部分专业边界时，原来的分工未必还是最优解。</p>
+<p class="rv">这也是我今年一直在思考《重新组织》的原因。</p>
+<p class="rv">AI Native 不是给每个岗位配一个 AI 助手，而是重新设计任务如何被定义、执行、验收和交付。</p>
+<p class="rv">如果组织结构不变，只是每个人多了一个 AI 工具，我们可能只是让旧流程跑得更忙。</p><blockquote class="pq rv serif">如果组织结构不变……<br>我们可能只是让旧流程跑得更忙。</blockquote></div></section><section id="c04" class="ch"><div class="open rv"><div class="num serif">04</div><h2 class="serif">我开始重新审视经验和人才的价值</h2><p class="thesis">AI 降低了执行门槛，却没有消除判断的价值。</p></div>
+<div class="col"><p class="rv">今年还有一个很有意思的现象。</p>
+<p class="rv">一个经验不多的年轻工程师，可能借助 AI 在十分钟内修好一个复杂 Bug。</p>
+<p class="rv">过去我们可以通过编码速度、技术熟练度判断一个工程师的能力，现在这些指标开始失真。</p>
+<p class="rv">当 AI 可以生成代码、方案和设计时，我们究竟应该如何判断一个人的真实能力？</p>
+<p class="rv">我越来越关注他能否准确理解问题，能否识别 AI 的错误，能否在结果不符合预期时找到原因，以及能否独立完成最终交付。</p>
+<p class="rv">AI 降低了执行门槛，却没有消除判断的价值。</p><figure class="fig rv"><svg viewBox="0 0 600 260"><text x="150" y="30" text-anchor="middle" class="t">执行门槛</text><path d="M60 70 L240 200" stroke="var(--acc2)" stroke-width="4"/><path d="M240 200 l-14 -2 l8 -12z" fill="var(--acc2)"/><text x="150" y="240" text-anchor="middle" class="t">↓ 降低</text>
+<text x="450" y="30" text-anchor="middle" class="t">判断的价值</text><path d="M360 130 H530" stroke="var(--acc)" stroke-width="4"/><path d="M540 130 l-14 -8 v16z" fill="var(--acc)"/><text x="450" y="240" text-anchor="middle" class="t a">→ 没有消除</text></svg><figcaption>执行门槛 ↓，判断价值 →</figcaption></figure><p class="rv">这也让我重新审视自己过去十几年的经验。</p>
+<p class="rv">有些技术经验确实在快速贬值，尤其是依赖特定工具、框架和实现方式的知识。</p>
+<p class="rv">但对业务的理解、系统性思考、产品判断、复杂问题的拆解能力，反而有机会被 AI 放大。</p>
+<p class="rv">当然，经验也可能成为包袱。</p>
+<p class="rv">一个人如果总用过去的成功方法理解新技术，很容易低估变化。</p>
+<p class="rv">我现在更愿意用一个人能否持续解决新问题，而不是过去解决过多少问题，来判断他的能力。</p>
+<p class="rv">对我自己也是如此。</p><blockquote class="pq rv serif">AI 降低了执行门槛，<br>却没有消除判断的价值。</blockquote></div></section><section id="c05" class="ch"><div class="open rv"><div class="num serif">05</div><h2 class="serif">技术越往前走，我越觉得组织变化太慢</h2><p class="thesis">技术进步不会自动带来组织进步。</p></div>
+<div class="col"><p class="rv">今年我经历了核心同学的离开。</p>
+<p class="rv">有人拿到了远高于当前收入的机会，决定去新的环境继续发展。</p>
+<p class="rv">作为管理者，我当然会不舍，但也能理解。</p>
+<p class="rv">AI 正在改变人才的能力边界，也在改变人才市场对能力的定价。</p>
+<p class="rv">优秀的人有了更多选择，组织却未必能及时调整原有的岗位、激励和发展机制。</p>
+<p class="rv">这件事也让我开始重新思考自己的职业选择。</p>
+<p class="rv">过去十几年，我经历过不少业务和组织变化，知道大公司不可避免地存在协调成本、资源竞争和管理问题。</p><figure class="fig rv"><svg viewBox="0 0 600 260"><path d="M30 130 C130 60 200 200 290 130" fill="none" stroke="var(--acc2)" stroke-width="3"/><circle cx="290" cy="130" r="10" fill="var(--acc2)"/>
+<text x="160" y="22" text-anchor="middle" class="t">慢</text><text x="160" y="46" text-anchor="middle" class="t">打磨 / 耐心 / 信任</text><text x="160" y="230" text-anchor="middle" class="t">产生价值</text>
+<g stroke="var(--mute)" stroke-width="2" fill="none"><path d="M330 130 q30 -50 60 0 t60 0"/><path d="M390 130 q30 50 60 0 t60 0"/><circle cx="450" cy="130" r="40" stroke-dasharray="3 5"/></g>
+<text x="450" y="22" text-anchor="middle" class="t">消耗</text><text x="450" y="46" text-anchor="middle" class="t">低效流程 / 内部博弈</text><text x="450" y="70" text-anchor="middle" class="t">无决策的会议</text><text x="450" y="230" text-anchor="middle" class="t a">没有产生价值</text></svg><figcaption>慢，不等于消耗</figcaption></figure><p class="rv">但今年，我对一些事情越来越没有耐心。</p>
+<p class="rv">当技术已经让我们有机会重新定义产品和工作方式时，如果大量时间仍然消耗在低效流程、内部博弈和缺少实质决策的会议上，我会觉得非常可惜。</p>
+<p class="rv">不是所有事情都需要更快。</p>
+<p class="rv">好的产品需要打磨，复杂的技术问题需要耐心，组织信任也需要时间。</p>
+<p class="rv">我不排斥慢，我排斥的是没有产生价值的消耗。</p>
+<p class="rv">技术进步不会自动带来组织进步。</p>
+<p class="rv">一个团队可以拥有最先进的模型，却依然使用过时的协作方式；可以让每个人都学会 AI，却没有改变真正决定交付效率的机制。</p>
+<p class="rv">这可能是下一阶段比工具普及更难的问题。</p><blockquote class="pq rv serif">我不排斥慢，<br>我排斥的是没有产生价值的消耗。</blockquote></div></section><section id="c06" class="ch"><div class="open rv"><div class="num serif">06</div><h2 class="serif">我开始重新思考，自己究竟想做什么</h2><p class="thesis">如果不再用职级和团队规模衡量自己，我希望留下什么？</p></div>
+<div class="col"><p class="rv">今年除了团队工作，我还花了不少时间写文章、做开源项目、研究产品，甚至发起了一个请 100 个人喝咖啡的计划。</p>
+<p class="rv">我想认识不同背景的人，听听他们在 AI 时代的真实经历。</p>
+<p class="rv">这些事情短期内未必能带来多少收益，但它们让我接触到公司业务之外的问题，也让我重新找回了对产品和人的好奇心。</p>
+<p class="rv">做了十几年互联网，职业发展很容易被晋升、薪酬和管理规模定义。</p>
+<p class="rv">这些当然重要。</p><figure class="fig rv"><svg viewBox="0 0 600 220"><path d="M40 160 C160 160 200 70 320 90 S480 40 560 50" fill="none" stroke="var(--line)" stroke-width="3"/>
+<circle cx="40" cy="160" r="8" fill="var(--mute)"/><text x="40" y="195" text-anchor="middle" class="t s">传统互联网</text>
+<circle cx="250" cy="100" r="8" fill="var(--mute)"/><text x="250" y="140" text-anchor="middle" class="t s">移动互联网</text>
+<circle cx="420" cy="62" r="8" fill="var(--acc2)"/><text x="420" y="100" text-anchor="middle" class="t s">AI · 百人团队</text>
+<circle cx="560" cy="50" r="12" fill="var(--acc)"/><text x="560" y="22" text-anchor="end" class="t a">亲手创造</text><text x="40" y="215" class="t s">16 年</text></svg><figcaption>16 年，走向亲手创造</figcaption></figure><p class="rv">但今年我开始认真思考，如果不再用职级和团队规模衡量自己，未来五年、十年，我希望留下什么？</p>
+<p class="rv">我仍然喜欢技术，喜欢亲手做产品，也喜欢和优秀的人一起解决困难的问题。</p>
+<p class="rv">我不想因为管理的团队越来越大，就离真实的技术和用户越来越远。</p>
+<p class="rv">我也希望过去积累的经验，不只是沉淀在某家公司的组织和系统里，而是能逐渐变成自己的产品、作品、方法论和长期关系。</p>
+<p class="rv">这是我今年开始认真做的一件事。</p><blockquote class="pq rv serif">不只是沉淀在某家公司的组织和系统里，<br>而是能逐渐变成自己的产品、作品、方法论和长期关系。</blockquote></div></section>
+<div class="col coda"><p class="rv" style="text-align:center;color:var(--mute)">⸻</p><p class="rv">回头看 2026 年，我对 AI 的长期发展比过去任何时候都乐观，但对如何使用自己的时间，比过去更加谨慎。</p>
+<p class="rv">我看到模型能力不断突破，也看到生产环境里的各种不确定性；看到个人创造力被释放，也看到组织协作成为瓶颈；看到年轻人的成长速度，也看到过去的经验需要不断重新验证。</p>
+<p class="rv">这些不是从发布会、榜单或者行业报告里得到的结论，而是每天写代码、做产品、带团队、解决问题时积累下来的感受。</p>
+<p class="rv">AI 让我重新找回了创造的快乐，也让我开始认真审视，什么样的工作和生活值得投入。</p>
+<p class="rv">16 年前刚参加工作时，我最大的愿望是把技术学好，把事情做好。</p>
+<p class="rv">16 年后的今天，我发现自己依然喜欢这些事情。</p>
+<p class="rv">只是现在，我有了更多选择，也开始更认真地思考如何选择。</p>
+<p class="rv">2026 年还没有结束。</p>
+<p class="rv">我仍然每天写代码，仍然有很多想做的产品，也仍然有很多没有想清楚的问题。</p>
+<p class="rv">但至少有一点很确定：</p></div>
+<section class="final"><p class="serif rv">我希望未来的自己，<br>仍然是一个<br>亲手创造东西的人。</p><small>2026 · 还没有结束</small></section>
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+const bar=document.getElementById('bar'),links=[...document.querySelectorAll('nav a')],secs=[...document.querySelectorAll('.ch')];
+addEventListener('scroll',()=>{const h=document.documentElement;bar.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%';let cur='';secs.forEach(s=>{if(s.getBoundingClientRect().top<innerHeight*.4)cur=s.id});links.forEach(a=>a.classList.toggle('on',a.getAttribute('href')=='#'+cur))},{passive:true});
+</script><footer style="text-align:center;padding:32px 16px;font-size:13px;opacity:.6">AI 手记 · 01 · © Leen Ma · <a href="https://creativecommons.org/licenses/by/4.0/" style="color:inherit">CC BY 4.0</a></footer></body></html>
