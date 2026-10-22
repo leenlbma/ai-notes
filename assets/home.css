@@ -6,7 +6,7 @@ html[lang=en] body{font-family:Georgia,"Iowan Old Style",serif}
 a{color:inherit}
 .wrap{max-width:46em;margin:0 auto;padding:0 24px}
 header{position:relative;padding:18vh 0 10vh;overflow:hidden}
-header:before{content:"";position:absolute;inset:-30% -50%;background:radial-gradient(35% 45% at 70% 30%,color-mix(in srgb,var(--acc) 20%,transparent),transparent),radial-gradient(30% 40% at 25% 85%,color-mix(in srgb,var(--acc2) 16%,transparent),transparent);z-index:-1;-webkit-mask-image:linear-gradient(#000 55%,transparent);mask-image:linear-gradient(#000 55%,transparent)}
+header:before{content:"";position:absolute;inset:-30% -50% 0;background:radial-gradient(35% 45% at 70% 30%,color-mix(in srgb,var(--acc) 20%,transparent),transparent),radial-gradient(30% 40% at 25% 85%,color-mix(in srgb,var(--acc2) 16%,transparent),transparent);z-index:-1;-webkit-mask-image:linear-gradient(#000 50%,transparent 95%);mask-image:linear-gradient(#000 50%,transparent 95%)}
 .lang{position:absolute;top:20px;right:24px;font:600 13px/1 -apple-system,sans-serif}.lang a,.lang b{text-decoration:none;color:var(--mute);padding:4px 2px}.lang b{color:var(--fg)}
 .eyebrow{font:600 12px/1 -apple-system,sans-serif;letter-spacing:.35em;color:var(--acc)}
 h1{font-size:clamp(44px,9vw,96px);line-height:1.1;margin:.3em 0 .25em}
