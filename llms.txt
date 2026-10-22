@@ -5,3 +5,7 @@
 ## 文章
 
 - [01 · 仍然是一个亲手创造东西的人](https://leenlbma.github.io/ai-notes/): 一个 16 年互联网人的 2026 AI 手记——创造成本、Demo 与交付、个人与组织效率、经验与人才、组织变化，以及想做什么。
+
+## English
+
+- [01 · Still Someone Who Builds Things by Hand](https://leenlbma.github.io/ai-notes/en/): Notes on AI in 2026 from 16 years in the internet industry — creation costs, demos vs. delivery, individual vs. organizational speed, experience and talent, organizational change, and what to do next. English translation of the Chinese essay.
