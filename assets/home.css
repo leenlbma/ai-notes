@@ -1,0 +1,24 @@
+:root{--bg:#f7f3ec;--fg:#1d1b18;--mute:#6f675b;--line:#d9d0c2;--acc:#a8472a;--acc2:#2c6a64;--card:#fffdf8}
+@media(prefers-color-scheme:dark){:root{--bg:#121110;--fg:#ebe5da;--mute:#b3aa9c;--line:#3a352f;--acc:#e0875c;--acc2:#72b8ae;--card:#1a1816}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.8 "PingFang SC","Hiragino Sans GB","Noto Sans SC","Noto Sans CJK SC","Microsoft YaHei",sans-serif;-webkit-font-smoothing:antialiased}
+html[lang=en] body{font-family:Georgia,"Iowan Old Style",serif}
+.serif{font-family:"Noto Serif SC","Noto Serif CJK SC","Source Han Serif SC","Songti SC",Georgia,serif}
+a{color:inherit}
+.wrap{max-width:46em;margin:0 auto;padding:0 24px}
+header{position:relative;padding:18vh 0 10vh;overflow:hidden}
+header:before{content:"";position:absolute;inset:-30% -50%;background:radial-gradient(35% 45% at 70% 30%,color-mix(in srgb,var(--acc) 20%,transparent),transparent),radial-gradient(30% 40% at 25% 85%,color-mix(in srgb,var(--acc2) 16%,transparent),transparent);z-index:-1;-webkit-mask-image:linear-gradient(#000 55%,transparent);mask-image:linear-gradient(#000 55%,transparent)}
+.lang{position:absolute;top:20px;right:24px;font:600 13px/1 -apple-system,sans-serif}.lang a,.lang b{text-decoration:none;color:var(--mute);padding:4px 2px}.lang b{color:var(--fg)}
+.eyebrow{font:600 12px/1 -apple-system,sans-serif;letter-spacing:.35em;color:var(--acc)}
+h1{font-size:clamp(44px,9vw,96px);line-height:1.1;margin:.3em 0 .25em}
+.intro{color:var(--mute);font-size:clamp(17px,2.2vw,21px);margin:0}
+main{padding-bottom:12vh}
+.post{display:block;text-decoration:none;border-top:1px solid var(--line);padding:36px 0}
+.post:last-child{border-bottom:1px solid var(--line)}
+.meta{font:600 13px/1 -apple-system,sans-serif;color:var(--mute);letter-spacing:.1em;display:flex;gap:14px;align-items:baseline}
+.meta .no{font-family:"Noto Serif SC",Georgia,serif;font-size:44px;color:transparent;-webkit-text-stroke:1px var(--acc);letter-spacing:0}
+.post h2{font-size:clamp(26px,4.5vw,40px);line-height:1.3;margin:.35em 0 .3em}
+.post:hover h2{color:var(--acc)}
+.post p{margin:0 0 .8em;color:var(--mute)}
+.more{font:600 14px/1 -apple-system,sans-serif;color:var(--acc)}
+.alt{font-size:14px;color:var(--mute);margin-top:-6px}.alt a{color:var(--acc2)}
+footer{font-size:13px;color:var(--mute);padding:32px 0 48px;text-align:center}

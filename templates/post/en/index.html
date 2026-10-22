@@ -1,0 +1,56 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{{TITLE}} | AI Notes</title><meta name="description" content="{{DESCRIPTION}}"><link rel="canonical" href="https://leenlbma.github.io/ai-notes/posts/{{SLUG}}/en/">
+<meta property="og:type" content="article"><meta property="og:title" content="{{TITLE}} | AI Notes"><meta property="og:description" content="{{DESCRIPTION}}"><meta property="og:url" content="https://leenlbma.github.io/ai-notes/posts/{{SLUG}}/en/"><meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary"><meta name="twitter:title" content="{{TITLE}} | AI Notes"><meta name="twitter:description" content="{{DESCRIPTION}}">
+<meta name="author" content="Leen Ma"><link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+<style>body{font-family:Georgia,"Iowan Old Style","Palatino Linotype",serif;line-height:1.75}p{text-align:left;hyphens:auto}.hero h1{letter-spacing:0;line-height:1.1}.pq{font-family:Georgia,serif}
+:root{--bg:#f7f3ec;--fg:#1d1b18;--mute:#7a7266;--line:#d9d0c2;--acc:#a8472a;--acc2:#2c6a64;--paper:#fffdf8}
+@media(prefers-color-scheme:dark){:root{--bg:#121110;--fg:#ebe5da;--mute:#b3aa9c;--line:#3a352f;--acc:#e0875c;--acc2:#72b8ae;--paper:#1a1816}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--fg);font:18px/1.9 "PingFang SC","Hiragino Sans GB","Noto Sans SC","Noto Sans CJK SC","Microsoft YaHei",sans-serif;-webkit-font-smoothing:antialiased}
+.serif{font-family:"Noto Serif SC","Noto Serif CJK SC","Source Han Serif SC","Songti SC","STSong",serif}
+#bar{position:fixed;top:0;left:0;height:3px;width:0;background:var(--acc);z-index:20}
+.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:center;padding:10vh 8vw;overflow:hidden}
+.hero:before{content:"";position:absolute;inset:-20%;background:radial-gradient(40% 40% at 75% 30%,color-mix(in srgb,var(--acc) 22%,transparent),transparent),radial-gradient(35% 35% at 20% 80%,color-mix(in srgb,var(--acc2) 18%,transparent),transparent);animation:drift 18s ease-in-out infinite alternate;z-index:-1}
+.hero:after{content:"";position:absolute;inset:0;opacity:.09;z-index:-1;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)'/%3E%3C/svg%3E")}
+@keyframes drift{to{transform:translate(4%,-3%) scale(1.08)}}
+.eyebrow{font-size:13px;letter-spacing:.4em;color:var(--acc)}
+.hero h1{font-size:clamp(40px,8.5vw,112px);line-height:1.18;font-weight:700;margin:.35em 0 .3em;letter-spacing:.02em}
+.hero .sub{font-size:clamp(17px,2.2vw,22px);color:var(--mute)}
+.scroll{position:absolute;bottom:5vh;left:8vw;font-size:13px;color:var(--mute);letter-spacing:.2em}
+nav{position:sticky;top:0;z-index:10;display:flex;gap:4px;justify-content:center;padding:10px;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav a{font:600 13px/1 sans-serif;color:var(--mute);text-decoration:none;padding:7px 12px;border-radius:99px}nav a.on{background:var(--fg);color:var(--bg)}
+.col{max-width:38em;margin:0 auto;padding:0 24px}
+p{margin:0 0 1.15em;text-align:justify}
+.pre{padding:12vh 0 4vh}.pre p:first-child{font-size:1.3em;line-height:1.7}
+.ch{padding:10vh 0 6vh}
+.open{min-height:70svh;display:flex;flex-direction:column;justify-content:center;max-width:1100px;margin:0 auto 8vh;padding:0 8vw;border-top:1px solid var(--line)}
+.num{font-size:clamp(96px,20vw,240px);line-height:1;color:transparent;-webkit-text-stroke:1.5px var(--acc);font-weight:700}
+.open h2{font-size:clamp(26px,4.4vw,48px);line-height:1.35;margin:.3em 0}
+.thesis{font-size:clamp(17px,2vw,21px);color:var(--acc);text-align:left;margin:0}
+.pq{margin:9vh -2vw;padding:0;font-size:clamp(24px,3.6vw,38px);line-height:1.55;font-weight:600;border:0;position:relative}
+.pq:before{content:"\201C";position:absolute;left:-.1em;top:-.55em;font-size:3em;color:var(--acc);opacity:.25}
+.fig{margin:7vh 0;padding:0}.fig svg{width:100%;height:auto;display:block}
+.fig figcaption{font-size:13px;color:var(--mute);text-align:center;margin-top:12px;letter-spacing:.1em}
+.fig svg{color:var(--fg);overflow:visible}.t,.t text{font-family:-apple-system,Helvetica,Arial,sans-serif;fill:var(--fg)}.t.a{fill:var(--acc);font-weight:700}.t.s{fill:var(--mute)}@media(min-width:601px){.t,.t text{font-size:17px}.t.s{font-size:15px}}
+.coda{padding:12vh 0 0}
+.final{min-height:100svh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:10vh 8vw;background:var(--fg);color:var(--bg)}
+.final p{font-size:clamp(30px,6vw,72px);line-height:1.4;font-weight:700;text-align:center;margin:0}
+.final small{margin-top:5vh;letter-spacing:.4em;font-size:13px;opacity:.6}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .9s ease,transform .9s ease}.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.hero:before{animation:none}html{scroll-behavior:auto}}
+@media(max-width:600px){body{font-size:17px}.pq{margin:7vh 0}.open{min-height:60svh}p{text-align:left}}
+</style><link rel="alternate" hreflang="zh-CN" href="https://leenlbma.github.io/ai-notes/posts/{{SLUG}}/"><link rel="alternate" hreflang="en" href="https://leenlbma.github.io/ai-notes/posts/{{SLUG}}/en/"><link rel="alternate" hreflang="x-default" href="https://leenlbma.github.io/ai-notes/posts/{{SLUG}}/"><style>.lang{position:absolute;top:18px;right:6vw;z-index:30;font:600 13px/1 -apple-system,sans-serif;letter-spacing:.05em}.lang a,.lang b{color:var(--mute);text-decoration:none;padding:4px 2px}.lang b{color:var(--fg)}</style></head><body><div id="bar"></div>
+<header class="hero"><div class="lang"><a href="../" hreflang="zh-CN">中文</a> / <b>EN</b></div><div class="eyebrow">AI Notes · {{NO}}　/　{{YEAR}}</div><h1 class="serif">{{TITLE_LINE_1}}<br>{{TITLE_LINE_2}}</h1><div class="sub">{{SUBTITLE}}</div><div class="scroll">Scroll to read ↓</div></header>
+<nav><a href="#c01">01</a><a href="#c02">02</a></nav>
+<div class="col pre"><p class="rv">{{Opening paragraph}}</p></div>
+<section id="c01" class="ch"><div class="open rv"><div class="num serif">01</div><h2 class="serif">{{Chapter title}}</h2><p class="thesis">{{One-line thesis}}</p></div>
+<div class="col"><p class="rv">{{Body paragraph}}</p>
+<figure class="fig rv"><svg viewBox="0 0 600 240"><!-- labels: class="t" fill="currentColor" font-size="24"; wrap long English labels into several <text> lines --><text x="300" y="120" text-anchor="middle" class="t" fill="currentColor" font-size="24">{{Diagram label}}</text></svg><figcaption>{{Caption}}</figcaption></figure>
+<blockquote class="pq rv serif">{{Pull quote}}</blockquote></div></section>
+<section id="c02" class="ch"><div class="open rv"><div class="num serif">02</div><h2 class="serif">{{Chapter title}}</h2><p class="thesis">{{One-line thesis}}</p></div>
+<div class="col"><p class="rv">{{Body paragraph}}</p></div></section>
+<section class="final"><p class="serif rv">{{Closing line}}</p><small>{{YEAR}}</small></section>
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+const bar=document.getElementById('bar'),links=[...document.querySelectorAll('nav a')],secs=[...document.querySelectorAll('.ch')];
+addEventListener('scroll',()=>{const h=document.documentElement;bar.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%';let cur='';secs.forEach(s=>{if(s.getBoundingClientRect().top<innerHeight*.4)cur=s.id});links.forEach(a=>a.classList.toggle('on',a.getAttribute('href')=='#'+cur))},{passive:true});
+</script><footer style="text-align:center;padding:32px 16px;font-size:13px;opacity:.6">AI Notes · {{NO}} · © Leen Ma · <a href="https://creativecommons.org/licenses/by/4.0/" style="color:inherit">CC BY 4.0</a></footer></body></html>

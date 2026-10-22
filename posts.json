@@ -1,0 +1,18 @@
+{
+  "series": {
+    "zh": {"name": "AI 手记", "intro": "一个 16 年互联网人在 AI 时代亲手做事的记录。"},
+    "en": {"name": "AI Notes", "intro": "Notes from 16 years in the internet industry, on building things by hand in the AI era."},
+    "author": "Leen Ma",
+    "base": "https://leenlbma.github.io/ai-notes/",
+    "license": "CC BY 4.0"
+  },
+  "posts": [
+    {
+      "no": "01",
+      "slug": "01-still-building-by-hand",
+      "date": "2026-10",
+      "zh": {"title": "仍然是一个亲手创造东西的人", "summary": "一个 16 年互联网人的 2026 AI 手记：创造的成本、Demo 与交付、个人与组织效率、经验与人才，以及自己究竟想做什么。"},
+      "en": {"title": "Still Someone Who Builds Things by Hand", "summary": "Notes on AI in 2026 from 16 years in the internet industry: the cost of creating, demos vs. delivery, individual vs. organizational speed, experience and talent, and what I really want to do."}
+    }
+  ]
+}
