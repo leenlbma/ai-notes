@@ -21,7 +21,7 @@ def page(lang):
 <link rel="alternate" hreflang="zh-CN" href="{B}"><link rel="alternate" hreflang="en" href="{B}en/"><link rel="alternate" hreflang="x-default" href="{B}">
 <meta property="og:type" content="website"><meta property="og:title" content="{title}"><meta property="og:description" content="{html.escape(s['intro'])}"><meta property="og:url" content="{url}"><meta property="og:locale" content="{'zh_CN' if zh else 'en_US'}">
 <meta name="twitter:card" content="summary"><meta name="twitter:title" content="{title}"><meta name="twitter:description" content="{html.escape(s['intro'])}">
-<meta name="author" content="{S['author']}"><link rel="license" href="https://creativecommons.org/licenses/by/4.0/"><link rel="stylesheet" href="{pre}assets/home.css"></head>
+<meta name="author" content="{S['author']}"><link rel="license" href="https://creativecommons.org/licenses/by/4.0/"><link rel="stylesheet" href="{pre}assets/home.css"><script defer src="https://cloud.umami.is/script.js" data-website-id="8ba58f50-24d2-4d61-a09c-1aa3558a4ade"></script></head>
 <body><header><div class="wrap"><div class="lang">{sw}</div><div class="eyebrow">{'系列 · ' if zh else 'SERIES · '}{len(P)} {'篇' if zh else ('essay' if len(P)==1 else 'essays')}</div>
 <h1 class="serif">{s['name']}</h1><p class="intro">{html.escape(s['intro'])}</p></div></header>
 <main class="wrap">{items}</main>
@@ -38,3 +38,8 @@ urls=[B,B+'en/']+[u for p in P for u in (f"{B}posts/{p['slug']}/",f"{B}posts/{p[
 sm='<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+''.join(f'  <url><loc>{u}</loc></url>\n' for u in urls)+'</urlset>\n'
 open(os.path.join(R,'sitemap.xml'),'w').write(sm)
 print('ok',len(P),'posts')
+
+# check: every html carries Umami
+import glob as _g
+for _f in _g.glob(os.path.join(R,'**','*.html'),recursive=True):
+    assert 'data-website-id="8ba58f50-24d2-4d61-a09c-1aa3558a4ade"' in open(_f,encoding='utf-8').read(), 'Missing Umami: '+_f
