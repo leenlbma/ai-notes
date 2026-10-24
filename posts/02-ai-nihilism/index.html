@@ -1,0 +1,202 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>我理解的“AI 时代虚无主义” | AI 手记 · 02</title><meta name="description" content="从《博德之门3》的修改器说起：当 AI 让创造变得廉价，我们究竟热爱创造，还是热爱自己比别人更擅长创造？"><link rel="canonical" href="https://leenlbma.github.io/ai-notes/posts/02-ai-nihilism/"><meta property="og:type" content="article"><meta property="og:title" content="我理解的“AI 时代虚无主义” | AI 手记"><meta property="og:description" content="从《博德之门3》的修改器说起：当 AI 让创造变得廉价，我们究竟热爱创造，还是热爱自己比别人更擅长创造？"><meta property="og:url" content="https://leenlbma.github.io/ai-notes/posts/02-ai-nihilism/"><meta property="og:locale" content="zh_CN"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="我理解的“AI 时代虚无主义” | AI 手记"><meta name="twitter:description" content="从《博德之门3》的修改器说起：当 AI 让创造变得廉价，我们究竟热爱创造，还是热爱自己比别人更擅长创造？"><meta name="author" content="Leen Ma"><link rel="license" href="https://creativecommons.org/licenses/by/4.0/"><script defer src="https://cloud.umami.is/script.js" data-website-id="8ba58f50-24d2-4d61-a09c-1aa3558a4ade"></script><meta name="color-scheme" content="light dark"><style>
+:root{--bg:#fbfaf7;--fg:#141414;--mute:#8a8a86;--line:#e2e0da;--r:#c8102e}
+@media(prefers-color-scheme:dark){:root{--bg:#0e0e0d;--fg:#e8e6e1;--mute:#7c7a75;--line:#262624;--r:#ff5a5f}}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--fg);font:17px/2.1 "Noto Serif SC","Noto Serif CJK SC","Songti SC",serif;-webkit-font-smoothing:antialiased;font-feature-settings:"palt" 0}
+.sans{font-family:"Helvetica Neue","PingFang SC","Noto Sans CJK SC",sans-serif}
+.hero{min-height:100svh;display:grid;grid-template-rows:auto 1fr auto;padding:28px 28px 32px}
+.hero .meta{display:flex;justify-content:space-between;font:400 11px/1.6 "Helvetica Neue",sans-serif;letter-spacing:.2em;color:var(--mute)}
+h1{align-self:center;font-weight:500;font-size:clamp(30px,8.2vw,64px);line-height:1.5;margin:0;letter-spacing:.04em}
+h1 small{display:block;font-size:.42em;color:var(--mute);letter-spacing:.3em;margin-bottom:1.2em}
+.hero .foot{font-size:13px;color:var(--mute);line-height:1.9;border-top:.5px solid var(--fg);padding-top:14px;display:flex;justify-content:space-between;gap:20px}
+.hero .foot b{color:var(--r);font-weight:400}
+.col{max-width:28em;margin:0 auto;padding:0 28px}
+p{margin:0 0 1.4em;letter-spacing:.02em}
+.pre{padding:16vh 28px 6vh}
+.open{min-height:92svh;display:flex;flex-direction:column;justify-content:center;padding:0 28px;max-width:44em;margin:0 auto}
+.open .n{font:300 13px/1 "Helvetica Neue",sans-serif;letter-spacing:.3em;color:var(--r);margin-bottom:3em}
+.open h2{font-weight:500;font-size:clamp(22px,5.6vw,36px);line-height:1.75;margin:0;letter-spacing:.05em;max-width:13em}
+.pq{min-height:100svh;display:flex;align-items:center;margin:0 auto;padding:0 28px;max-width:40em;font-size:clamp(22px,6vw,40px);line-height:1.8;font-weight:500;letter-spacing:.04em}
+.pq:before{content:"";display:block;width:1px;align-self:stretch;margin:30vh 22px 30vh 0;background:var(--r);flex:none}
+.diary{min-height:90svh;margin:0;display:flex;flex-direction:column;justify-content:center;align-items:center}
+.diary div{writing-mode:vertical-rl;font-size:clamp(20px,5.4vw,28px);line-height:2.2;letter-spacing:.3em;height:12.5em}
+.diary figcaption{margin-top:2.5em;font:11px "Helvetica Neue",sans-serif;letter-spacing:.3em;color:var(--mute)}
+.fig{margin:14vh 0;padding:0;color:var(--fg)}.fig svg{width:100%;height:auto;display:block}
+.fig figcaption{font-size:12px;color:var(--mute);margin-top:20px;letter-spacing:.2em;text-align:center}
+.t{font:400 11.5px "PingFang SC","Noto Sans CJK SC",sans-serif;fill:var(--fg)}.t.s,.t .s{fill:var(--mute)}
+.ch{padding-bottom:10vh}
+.finale{min-height:100svh;display:flex;flex-direction:column;justify-content:center;padding:0 28px;max-width:40em;margin:0 auto}
+.finale p{font-size:clamp(21px,5.6vw,34px);line-height:2;font-weight:500;letter-spacing:.04em}.finale span{color:var(--r)}
+.finale small{font:11px "Helvetica Neue",sans-serif;letter-spacing:.3em;color:var(--mute);margin-top:6vh}
+.rv{opacity:0;transition:opacity 1.4s ease}.rv.in{opacity:1}
+@media(min-width:900px){.hero{padding:48px 7vw}.col{margin-left:calc(50% - 6em)}}
+.home{color:inherit;text-decoration:none}.home:hover{color:var(--r)}.sitenav{max-width:40em;margin:0 auto;padding:40px 28px 56px;border-top:.5px solid var(--line);font:13px/2 "Helvetica Neue","PingFang SC",sans-serif;color:var(--mute);display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px}.sitenav a{color:var(--fg);text-decoration:none;border-bottom:.5px solid var(--line)}.sitenav a:hover{color:var(--r);border-color:var(--r)}
+</style></head><body>
+<header class="hero"><div class="meta"><a class="home" href="../../">← AI 手记</a><span>02</span></div><h1><small>随笔</small>我理解的<br>“AI 时代虚无主义”</h1><div class="foot sans"><span>Leen Ma<br>2026</span><span style="text-align:right">01 / 02 / 03 / 04 / 05 / 06<br><b>写在最后</b></span></div></header>
+<div class="col pre">
+<p class="rv">最近读到一篇文章，作者把自己在 AI 时代的一种失落感，称为“AI 时代的虚无主义”。</p>
+<p class="rv">他讲了一个很有意思的经历：在《博德之门3》里打开修改器，获得无限负重。最初觉得很爽，但十分钟后，整个游戏突然变得索然无味。</p>
+<p class="rv">那些原本需要探索、积累和取舍才能获得的东西，现在点一下按钮就有了。</p>
+<p class="rv">他觉得，AI 正在让现实世界发生类似的变化。</p>
+
+<p class="rv">我很理解这种感受。</p>
+<p class="rv">过去一年，我几乎每天都在使用 AI。曾经让我兴奋很久的模型能力，现在逐渐变成了日常。一个新模型发布，我首先考虑的已经是它能解决什么问题、成本多少、能否稳定运行。</p>
+<p class="rv">但读完这篇文章，我一直在想另一个问题。</p>
+</div><blockquote class="pq rv">我们究竟热爱创造，还是热爱自己比别人更擅长创造？</blockquote><div class="col">
+<p class="rv">这个问题可能有点冒犯。</p>
+<p class="rv">尤其对那些花了十几年学习技术、积累经验，并以此建立职业身份的人来说。</p>
+<p class="rv">我自己也是其中之一。</p>
+</div>
+<section class="ch"><div class="open rv"><div class="n">01 — </div><h2>我们可能没有想象中那么热爱创造</h2></div><div class="col">
+<p class="rv">做技术的人，通常都很享受解决困难问题的过程。</p>
+<p class="rv">一个 Bug 调试三天，终于找到原因；一个系统优化几个月，性能提高了十倍；一项复杂技术终于在生产环境跑通。</p>
+<p class="rv">这些时刻带来的满足感非常真实。</p>
+<p class="rv">但我开始怀疑，其中究竟有多少来自问题被解决，又有多少来自“我有能力解决这个问题”？</p>
+<p class="rv">两者看起来很接近，实际上并不相同。</p>
+<p class="rv">如果一个复杂问题被 AI 在十分钟内解决，我们当然获得了结果，却可能失去原本期待的成就感。</p>
+<p class="rv">如果一个年轻工程师借助 AI，完成了过去只有资深工程师才能完成的工作，我们会为技术进步感到高兴，但心里是否也会有一点失落？</p>
+<p class="rv">我觉得很难完全没有。</p>
+<p class="rv">因为我们花了很多年建立的专业能力，除了帮助我们解决问题，也一直在帮助我们确认自己的价值。</p>
+<p class="rv">我会写别人写不出的代码。</p>
+<p class="rv">我能设计别人设计不了的系统。</p>
+<p class="rv">我理解别人不理解的复杂问题。</p>
+<p class="rv">这些能力逐渐成为我们认识自己的方式。</p>
+<p class="rv">而 AI 正在改变这种关系。</p>
+<p class="rv">过去需要多年积累才能完成的任务，现在越来越多的人可以借助工具完成。</p>
+<p class="rv">我们当然可以说，真正的专业能力远不止这些。</p>
+<p class="rv">但这并不能完全消除内心的不安。</p>
+<p class="rv">因为我们不得不面对一个事实：</p>
+<p class="rv">有时候，让我们感到快乐的，不只是创造了什么，还有自己拥有别人不具备的创造能力。</p>
+<p class="rv">这并不丢人。</p>
+<p class="rv">人需要认可，需要成就感，也需要在社会中找到自己的位置。</p>
+<p class="rv">只是过去，这几种需要经常被同一种能力同时满足。</p>
+<p class="rv">现在，它们开始分离了。</p>
+
+</div></section>
+<section class="ch"><div class="open rv"><div class="n">02 — </div><h2>我们把困难当成了价值的证明</h2></div><div class="col">
+<p class="rv">原文用游戏修改器解释虚无感，我觉得很准确地捕捉到了某种心理。</p>
+<p class="rv">但游戏和现实存在一个重要区别。</p>
+<p class="rv">游戏里的障碍，很多是体验的一部分。资源有限、能力不足、不断失败，构成了游戏的乐趣。</p>
+<p class="rv">现实世界里的很多障碍，却只是生产条件的限制。</p>
+<p class="rv">一个人花三天整理一万行数据，另一个人借助 AI 十分钟完成。如果结果相同，前者并不会因为付出更多时间，就天然创造了更多价值。</p>
+<p class="rv">但我们很容易产生这样的错觉。</p>
+<p class="rv">因为过去很长一段时间，困难程度与专业能力高度相关。</p>
+<p class="rv">越难的事情，越需要训练有素的人完成，也越容易获得认可。</p>
+<p class="rv">久而久之，我们甚至开始用投入的时间和克服的困难，衡量一件事情的价值。</p>
+<p class="rv">AI 正在拆开这种关系。</p>
+<p class="rv">一个任务可以很容易完成，却具有很高的价值；也可以耗费巨大精力，最终没有解决任何真实问题。</p>
+<figure class="fig rv"><svg viewBox="0 0 300 240" role="img" aria-label="难度与价值"><g fill="none" stroke="currentColor" stroke-width=".6"><rect x="40" y="10" width="240" height="200"/><line x1="160" y1="10" x2="160" y2="210"/><line x1="40" y1="110" x2="280" y2="110"/></g><line x1="60" y1="200" x2="270" y2="20" stroke="var(--r)" stroke-width=".6" stroke-dasharray="2 3"/>
+<g class="t"><text x="100" y="64" text-anchor="middle">容易　有价值</text><text x="220" y="64" text-anchor="middle">困难　有价值</text><text x="100" y="164" text-anchor="middle">容易　无价值</text><text x="220" y="164" text-anchor="middle">困难　无价值</text><text x="160" y="232" text-anchor="middle" class="s">难度</text><text x="22" y="114" text-anchor="middle" class="s" transform="rotate(-90 22 110)">价值</text></g></svg><figcaption>困难与价值，被拆开了</figcaption></figure>
+<p class="rv">这让我重新思考，过去那些让我骄傲的经历，究竟留下了什么。</p>
+<p class="rv">我不认为它们白费了。</p>
+<p class="rv">长期解决复杂问题，确实会塑造一个人的判断力、耐心和对系统的理解。</p>
+<p class="rv">但如果某些困难已经能够被工具消除，我们没有必要为了证明自己的专业能力，而坚持亲手克服它们。</p>
+</div><blockquote class="pq rv">过去的努力值得尊重，不意味着过去的困难值得保留。</blockquote><div class="col">
+<p class="rv">真正令人不适的，可能是我们终于需要把能力本身，与能力所创造的价值分开衡量。</p>
+</div></section>
+<section class="ch"><div class="open rv"><div class="n">03 — </div><h2>最难接受的，是自己不再那么特别</h2></div><div class="col">
+<p class="rv">原文里让我印象更深的，是晚清举人刘大鹏的故事。</p>
+<p class="rv">科举制度废除以后，他花费大半生建立的知识体系和人生目标，突然失去了原来的意义。</p>
+<p class="rv">他在日记里写下：</p>
+</div><figure class="diary rv"><div>“甫晓起来心若死灰，看得眼前一切，均属空虚。”</div><figcaption>—— 刘大鹏 · 日记</figcaption></figure><div class="col">
+<p class="rv">我觉得，这种感受与今天部分技术人的处境有某种相似之处。</p>
+<p class="rv">我们从小接受的教育，基本都在鼓励我们成为更优秀的人。</p>
+<p class="rv">考更好的学校，掌握更难的知识，进入更好的公司，解决更复杂的问题。</p>
+<p class="rv">工作以后，评价体系变成了职位、收入、影响力和专业能力。</p>
+<p class="rv">这套规则曾经非常清晰。</p>
+<p class="rv">只要持续投入，就有机会建立优势。</p>
+<p class="rv">但 AI 正在让一部分过去稀缺的能力迅速普及。</p>
+<p class="rv">这意味着，我们不能再简单地通过掌握某项技能，获得稳定的身份认同。</p>
+<p class="rv">一个工程师可能依然拥有很强的技术能力，但过去需要他亲自完成的大量工作，正在被 AI 接管。</p>
+<p class="rv">一个设计师可能依然具有优秀的审美，但生成高质量视觉作品的门槛已经发生变化。</p>
+<p class="rv">我不认为专业能力会因此消失。</p>
+<p class="rv">但我们需要接受，专业能力的价值会不断被重新定价。</p>
+<p class="rv">更难接受的，是自己可能不再像过去那样特别。</p>
+<p class="rv">我们一直以为自己害怕被 AI 替代，也许有一部分恐惧，来自不再能够轻易证明自己与众不同。</p>
+<p class="rv">这种变化并不会因为我们不断强调“人类仍然拥有判断力和创造力”就自动消失。</p>
+<p class="rv">因为判断力、创造力本身，也正在受到 AI 能力进步的影响。</p>
+<p class="rv">如果我们只是不断寻找下一项 AI 暂时无法完成的能力，用它证明人的不可替代性，那么迟早还会面临同样的问题。</p>
+
+</div></section>
+<section class="ch"><div class="open rv"><div class="n">04 — </div><h2>当不再需要证明自己，我们反而不知道该做什么</h2></div><div class="col">
+<p class="rv">我觉得这里才是虚无感真正开始出现的地方。</p>
+<p class="rv">过去，我们总有明确的下一步。</p>
+<p class="rv">不会写代码，就学习编程。</p>
+<p class="rv">做不了复杂系统，就积累经验。</p>
+<p class="rv">没有能力实现一个产品，就寻找团队和资源。</p>
+<p class="rv">我们的人生很大一部分时间，都花在弥补能力不足上。</p>
+<p class="rv">而 AI 正在不断缩短这个过程。</p>
+<p class="rv">很多过去需要漫长积累才能完成的任务，现在可以直接开始。</p>
+<p class="rv">按理说，我们应该因此获得更多自由。</p>
+<p class="rv">但自由有时候也会让人不安。</p>
+<p class="rv">因为过去那些限制我们的条件，同时也在替我们筛选目标。</p>
+<p class="rv">一个人只能做三件事，就必须做出取舍。</p>
+<p class="rv">当一个人可以同时尝试三十件事，每件事看起来都值得做，选择反而变得困难。</p>
+<figure class="fig rv"><svg viewBox="0 0 300 120" role="img" aria-label="三件事与三十件事"><g fill="currentColor"><circle cx="40" cy="60" r="2.4"/><circle cx="60" cy="60" r="2.4"/><circle cx="80" cy="60" r="2.4"/></g><line x1="130" y1="20" x2="130" y2="100" stroke="currentColor" stroke-width=".5"/><circle cx="160" cy="38" r="2.4" fill="none" stroke="currentColor" stroke-width=".6"/><circle cx="173" cy="38" r="2.4" fill="none" stroke="currentColor" stroke-width=".6"/><circle cx="186" cy="38" r="2.4" fill="none" stroke="currentColor" stroke-width=".6"/><circle cx="199" cy="38" r="2.4" fill="none" stroke="currentColor" stroke-width=".6"/><circle cx="212" cy="38" r="2.4" fill="none" stroke="currentColor" stroke-width=".6"/><circle cx="225" cy="38" r="2.4" fill="none" stroke="currentColor" stroke-width=".6"/><circle cx="238" cy="38" r="2.4" fill="none" stroke="currentColor" stroke-width=".6"/><circle cx="251" cy="38" r="2.4" fill="none" stroke="currentColor" stroke-width=".6"/><circle cx="264" cy="38" r="2.4" fill="none" stroke="currentColor" stroke-width=".6"/><circle cx="277" cy="38" r="2.4" fill="none" stroke="currentColor" stroke-width=".6"/><circle cx="160" cy="60" r="2.4" fill="none" stroke="currentColor" stroke-width=".6"/><circle cx="173" cy="60" r="2.4" fill="none" stroke="currentColor" stroke-width=".6"/><circle cx="186" cy="60" r="2.4" fill="none" stroke="currentColor" stroke-width=".6"/><circle cx="199" cy="60" r="2.4" fill="none" stroke="currentColor" stroke-width=".6"/><circle cx="212" cy="60" r="2.4" fill="none" stroke="currentColor" stroke-width=".6"/><circle cx="225" cy="60" r="2.4" fill="none" stroke="currentColor" stroke-width=".6"/><circle cx="238" cy="60" r="2.4" fill="none" stroke="currentColor" stroke-width=".6"/><circle cx="251" cy="60" r="2.4" fill="none" stroke="currentColor" stroke-width=".6"/><circle cx="264" cy="60" r="2.4" fill="none" stroke="currentColor" stroke-width=".6"/><circle cx="277" cy="60" r="2.4" fill="none" stroke="currentColor" stroke-width=".6"/><circle cx="160" cy="82" r="2.4" fill="none" stroke="currentColor" stroke-width=".6"/><circle cx="173" cy="82" r="2.4" fill="none" stroke="currentColor" stroke-width=".6"/><circle cx="186" cy="82" r="2.4" fill="none" stroke="currentColor" stroke-width=".6"/><circle cx="199" cy="82" r="2.4" fill="none" stroke="currentColor" stroke-width=".6"/><circle cx="212" cy="82" r="2.4" fill="none" stroke="currentColor" stroke-width=".6"/><circle cx="225" cy="82" r="2.4" fill="none" stroke="currentColor" stroke-width=".6"/><circle cx="238" cy="82" r="2.4" fill="none" stroke="currentColor" stroke-width=".6"/><circle cx="251" cy="82" r="2.4" fill="none" stroke="currentColor" stroke-width=".6"/><circle cx="264" cy="82" r="2.4" fill="none" stroke="currentColor" stroke-width=".6"/><circle cx="277" cy="82" r="2.4" fill="none" stroke="currentColor" stroke-width=".6"/><g class="t s"><text x="60" y="100" text-anchor="middle">3</text><text x="219" y="110" text-anchor="middle">30</text></g></svg><figcaption>三件事，与三十件事</figcaption></figure>
+<p class="rv">我最近也经常有这种感受。</p>
+<p class="rv">新模型、新工具、新想法不断出现。一个项目刚刚完成，下一个方向已经开始吸引我的注意。</p>
+<p class="rv">有时候甚至来不及认真感受完成一件事情的快乐，就已经开始思考下一件事。</p>
+<p class="rv">我开始意识到，我们过去太习惯用持续进步来解释生活。</p>
+<p class="rv">完成一个目标，获得一次认可，然后寻找下一个更难的目标。</p>
+<p class="rv">这套机制可以驱动一个人不断成长，却未必能够让人长期满足。</p>
+<p class="rv">AI 只是让这个问题更早暴露出来。</p>
+<p class="rv">当我们不再需要通过漫长的努力证明“我能做到”，就不得不面对一个更难的问题：我为什么要做？</p>
+<p class="rv">这个问题没有标准答案。</p>
+<p class="rv">也无法通过更强的模型直接解决。</p>
+</div></section>
+<section class="ch"><div class="open rv"><div class="n">05 — </div><h2>我不认为创造必须以稀缺性为前提</h2></div><div class="col">
+<p class="rv">假设未来 AI 能够写出比我更好的代码，设计出比我更好的产品，甚至在很多判断上都比我准确。</p>
+<p class="rv">我还会继续创造吗？</p>
+<p class="rv">我想，我会。</p>
+<p class="rv">世界上一直有比我们跑得更快的人，但我们依然愿意跑步。</p>
+<p class="rv">有比我们画得更好的人，我们依然愿意画画。</p>
+<p class="rv">因为这些活动除了产生结果，也构成了我们体验世界的方式。</p>
+<p class="rv">我喜欢写代码，并不完全因为自己能够写出多么复杂的系统。</p>
+<p class="rv">很多时候，我只是对一个问题感兴趣，想亲手验证某个想法。</p>
+<p class="rv">在实现过程中，我可能发现原来的判断是错的，或者发现一个此前完全没有意识到的问题。</p>
+<p class="rv">这种理解逐渐变化的过程，本身就很有意思。</p>
+<p class="rv">当然，工作和兴趣不能完全等同。</p>
+<p class="rv">如果 AI 让大量专业技能失去市场稀缺性，相关岗位、收入和社会分配都可能受到冲击。</p>
+<p class="rv">这些现实问题不能靠一句“享受过程”解决。</p>
+<p class="rv">但我也不愿意把人的全部价值，都建立在某项技能的市场价格上。</p>
+<p class="rv">否则，无论我们今天找到多么稀缺的能力，都可能在下一轮技术变化中重新陷入同样的焦虑。</p>
+<p class="rv">我更愿意接受一种可能：</p>
+<p class="rv">未来，我们依然可以认真学习一门技能，认真完成一个作品，但不必总是通过它证明自己比别人优秀。</p>
+<p class="rv">一个人可以因为喜欢而写作，因为好奇而研究，因为关心某个问题而做产品。</p>
+<p class="rv">即使这些事情已经有更高效的完成方式。</p>
+</div><blockquote class="pq rv">创造不需要永远证明我们的不可替代性。</blockquote><div class="col">
+</div></section>
+<section class="ch"><div class="open rv"><div class="n">06 — </div><h2>我们可能需要重新学习如何生活</h2></div><div class="col">
+<p class="rv">原文最后借《塞尔达传说》表达了一个很美好的愿望。</p>
+<p class="rv">即使拥有直接击败最终 Boss 的能力，依然愿意探索地图上的每一个角落。</p>
+<p class="rv">我很喜欢这个比喻。</p>
+<p class="rv">但我觉得，现实生活比游戏更复杂。</p>
+<p class="rv">游戏至少有一个明确的终点，而我们的人生未必存在一条预先设计好的主线。</p>
+
+<p class="rv">我们不断学习、工作、成长，有时候只是因为周围的人都在沿着相似的路径前进。</p>
+<p class="rv">直到某一天，原本熟悉的规则开始变化，我们才第一次认真思考，自己究竟想去哪里。</p>
+<p class="rv">AI 可能正在制造这样一个时刻。</p>
+<p class="rv">它让很多曾经困难的事情变得可以实现，也让我们过去用来衡量成功的标准开始松动。</p>
+<p class="rv">我不觉得这一定是坏事。</p>
+<p class="rv">但它确实要求我们重新学习如何获得满足感。</p>
+<p class="rv">过去，我们很容易通过解决一个难题、获得一次晋升、完成一个项目来确认自己的进步。</p>
+<p class="rv">未来，这些事情依然重要，只是可能不再足以支撑我们对生活的全部期待。</p>
+<p class="rv">我也在学习接受这一点。</p>
+<p class="rv">不是每个想法都需要变成产品，不是每个项目都必须获得商业成功，也不是每天都需要比昨天更有效率。</p>
+<p class="rv">有些事情值得做，只是因为我对它感兴趣。</p>
+<p class="rv">有些时间值得花，只是因为我喜欢和某些人在一起。</p>
+<p class="rv">这些体验并不需要通过更高的生产效率来证明价值。</p>
+</div></section>
+<section class="ch"><div class="open rv"><div class="n">写在最后</div><h2></h2></div><div class="col">
+<p class="rv">我理解那篇文章里描述的虚无感。</p>
+<p class="rv">当一个人花费十几年建立的专业能力，突然不再那么稀缺，失落几乎不可避免。</p>
+<p class="rv">但我想，真正值得警惕的，是我们是否已经习惯通过自己的稀缺性来确认价值，以至于一旦不再特别，就不知道该如何面对自己。</p>
+<p class="rv">AI 可能会继续改变技能的价值，改变工作的方式，甚至改变我们对创造力的理解。</p>
+<p class="rv">我们无法保证今天拥有的优势，十年以后依然存在。</p>
+<p class="rv">但这不意味着过去的努力没有意义，也不意味着未来的创造不再值得投入。</p>
+<p class="rv">我依然会写代码，研究产品，关注新的技术突破。</p>
+<p class="rv">只是我希望自己逐渐不再需要通过这些事情，反复证明自己有多么优秀。</p>
+<p class="rv">如果有一天，AI 真的能够完成绝大多数我们今天引以为傲的工作，我希望自己仍然愿意做一些事情。</p>
+<p class="rv">不为了竞争，不为了证明，也不为了成为某个领域里不可替代的人。</p>
+<p class="rv">只是因为我想做。</p>
+</div></section>
+<section class="finale rv"><p>也许 AI 时代真正需要重新学习的，不是如何变得更强，而是当我们<span>不再那么特别</span>的时候，依然能够坦然地喜欢自己正在做的事情。</p><small>— 完</small></section><nav class="sitenav"><a href="../../">← AI 手记 · 全部文章</a><span>上一篇：<a href="../01-still-building-by-hand/">01 · 仍然是一个亲手创造东西的人</a></span><span style="width:100%">© Leen Ma · <a href="https://creativecommons.org/licenses/by/4.0/deed.zh-hans">CC BY 4.0</a> · <a href="https://github.com/leenlbma/ai-notes">GitHub</a></span></nav><script>const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{rootMargin:'0px 0px -8% 0px'});document.querySelectorAll('.rv').forEach(el=>io.observe(el));if(navigator.webdriver||/[?&]all/.test(location.search))document.querySelectorAll('.rv').forEach(el=>el.classList.add('in'));</script></body></html>
