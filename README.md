@@ -1,6 +1,6 @@
 # AI 手记 / AI Notes
 
-AI 手记：一个 16 年互联网人在 AI 时代亲手做事的记录。
+AI 手记：在代码与人文相交的地方，我仍想亲手做点什么。
 
 - 系列首页：https://leenlbma.github.io/ai-notes/ （English: https://leenlbma.github.io/ai-notes/en/）
 
