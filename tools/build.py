@@ -4,6 +4,8 @@ Optional helper: outputs are plain static files committed to the repo. Run: pyth
 import json,html,os
 R=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 d=json.load(open(os.path.join(R,'posts.json'),encoding='utf-8'));S=d['series'];B=S['base'];P=list(reversed(d['posts']))
+import hashlib
+V=hashlib.sha256(open(os.path.join(R,'assets','home.css'),'rb').read()).hexdigest()[:10]
 def page(lang):
     zh=lang=='zh';s=S[lang];pre='' if zh else '../'
     items=''
@@ -21,11 +23,11 @@ def page(lang):
 <link rel="alternate" hreflang="zh-CN" href="{B}"><link rel="alternate" hreflang="en" href="{B}en/"><link rel="alternate" hreflang="x-default" href="{B}">
 <meta property="og:type" content="website"><meta property="og:title" content="{title}"><meta property="og:description" content="{html.escape(s['tagline'])}"><meta property="og:url" content="{url}"><meta property="og:locale" content="{'zh_CN' if zh else 'en_US'}">
 <meta name="twitter:card" content="summary"><meta name="twitter:title" content="{title}"><meta name="twitter:description" content="{html.escape(s['tagline'])}">
-<meta name="author" content="{S['author']}"><link rel="license" href="https://creativecommons.org/licenses/by/4.0/"><link rel="stylesheet" href="{pre}assets/home.css"><script defer src="https://cloud.umami.is/script.js" data-website-id="8ba58f50-24d2-4d61-a09c-1aa3558a4ade"></script></head>
+<meta name="author" content="{S['author']}"><link rel="license" href="https://creativecommons.org/licenses/by/4.0/"><link rel="stylesheet" href="{pre}assets/home.css?v={V}"><script defer src="https://cloud.umami.is/script.js" data-website-id="8ba58f50-24d2-4d61-a09c-1aa3558a4ade"></script></head>
 <body><header class="wrap"><div class="top"><span>{s['name']} · {S['author']}</span><span class="lang">{sw}</span></div>
 <h1>{s['name']}</h1><div class="x" aria-hidden="true"></div><p class="tag">{html.escape(s['tagline'])}</p><p class="intro">{html.escape(s['intro'])}</p>
 <div class="count"><span>{'系列' if zh else 'Series'}</span><b>{sum(lang in p for p in P):02d}</b><span>{'篇' if zh else 'essays'}</span></div></header>
-<main class="wrap"><div class="label">{'目录' if zh else 'Contents'}</div><ol class="list">{items}</ol></main>
+<main class="wrap"><div class="label">{'目录' if zh else 'Contents'}</div><ol class="list" style="list-style:none;margin:0;padding:0">{items}</ol></main>
 <footer class="wrap"><div class="about"><div class="label">{'作者' if zh else 'Author'}</div><p>{S['author']} · {'写产品、写代码，也写下想法。' if zh else 'Writes products, code, and the thoughts in between.'}</p></div>
 <div class="sub"><div class="label">{'关注' if zh else 'Follow'}</div><p><a href="https://github.com/leenlbma/ai-notes">GitHub · Watch</a> · <a href="{pre}llms.txt">llms.txt</a></p></div>
 <small>© {S['author']} · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></small></footer></body></html>
