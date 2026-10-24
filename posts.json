@@ -3,12 +3,12 @@
     "zh": {
       "name": "AI 手记",
       "intro": "我相信技术最好的样子，是为人所用、也能被人理解。这里记下我在 AI 时代亲手做的事、还没想通的事，以及想过之后仍然选择去做的理由。",
-      "tagline": "在代码与人文相交的地方，我仍想亲手做点什么。"
+      "tagline": "技术让事情变快，我想让它们仍然有意义。"
     },
     "en": {
       "name": "AI Notes",
       "intro": "I believe technology is at its best when it serves people and can be understood by them. These are notes on what I make by hand in the AI era, what I haven't figured out yet, and why I keep making things anyway.",
-      "tagline": "Where code meets the humanities, I still want to make things by hand."
+      "tagline": "Technology makes things faster. I want them to still mean something."
     },
     "author": "Leen Ma",
     "base": "https://leenlbma.github.io/ai-notes/",

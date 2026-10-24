@@ -1,6 +1,6 @@
 # AI 手记 / AI Notes
 
-> 在代码与人文相交的地方，我仍想亲手做点什么。 Where code meets the humanities, I still want to make things by hand. 作者 / Author: Leen Ma，CC BY 4.0。
+> 技术让事情变快，我想让它们仍然有意义。 Technology makes things faster. I want them to still mean something. 作者 / Author: Leen Ma，CC BY 4.0。
 
 - 系列首页 / Series home: https://leenlbma.github.io/ai-notes/ · https://leenlbma.github.io/ai-notes/en/
 

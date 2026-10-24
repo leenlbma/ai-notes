@@ -1,6 +1,6 @@
 # AI 手记 / AI Notes
 
-AI 手记：在代码与人文相交的地方，我仍想亲手做点什么。
+AI 手记：技术让事情变快，我想让它们仍然有意义。
 
 - 系列首页：https://leenlbma.github.io/ai-notes/ （English: https://leenlbma.github.io/ai-notes/en/）
 
