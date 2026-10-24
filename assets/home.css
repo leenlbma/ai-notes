@@ -35,3 +35,4 @@ h1{margin-bottom:0}
 html[lang=en] .tag{letter-spacing:0;font-style:italic}
 .intro{max-width:30em;line-height:2}
 main.wrap{padding-top:12vh}footer.wrap{padding:0 28px 56px}html[lang=en] body{font-family:Georgia,"Iowan Old Style",serif}
+.tag{max-width:22em;text-wrap:balance}main.wrap{padding-top:7vh}
