@@ -9,6 +9,9 @@ AI 手记：技术让事情变快，我想让它们仍然有意义。
 | # | 中文 | English | 日期 |
 |---|---|---|---|
 | 01 | [仍然是一个亲手创造东西的人](https://leenlbma.github.io/ai-notes/posts/01-still-building-by-hand/) | [Still Someone Who Builds Things by Hand](https://leenlbma.github.io/ai-notes/posts/01-still-building-by-hand/en/) | 2026-10 |
+| 02 | [我理解的“AI 时代虚无主义”](https://leenlbma.github.io/ai-notes/posts/02-ai-nihilism/) | — | 2026-10 |
+| 03 | [在囚徒困境里，种一座花园](https://leenlbma.github.io/ai-notes/posts/03-garden-vs-track/) | — | 2026-10 |
+| 04 | [造山的人](https://leenlbma.github.io/ai-notes/posts/04-cairn-agent-control/) | — | 2026-11-03 |
 
 ## 目录结构
 
@@ -34,4 +37,4 @@ tools/build.py                从 posts.json 重新生成首页、llms.txt、sit
 
 ## 许可
 
-本仓库内容采用 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh-hans) 许可，署名 Leen Ma。
+除另有标注的第三方材料外，本仓库内容采用 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.zh-hans) 许可，署名 Leen Ma。

@@ -6,6 +6,7 @@
 
 ## 文章（中文）
 
+- [04 · 造山的人](https://leenlbma.github.io/ai-notes/posts/04-cairn-agent-control/): 《孤山独影》的画面和玩法，让我想认识做出它的人。读完他们的访谈，也想聊聊自己在做的 Agent。
 - [03 · 在囚徒困境里，种一座花园](https://leenlbma.github.io/ai-notes/posts/03-garden-vs-track/): 从 43 万部微短剧说起：当 AI 让所有人都能更快，我们如何走出囚徒困境？赛道思维与花园思维。
 - [02 · 我理解的“AI 时代虚无主义”](https://leenlbma.github.io/ai-notes/posts/02-ai-nihilism/): 从《博德之门3》的修改器说起：当 AI 让创造变得廉价，我们究竟热爱创造，还是热爱自己比别人更擅长创造？
 - [01 · 仍然是一个亲手创造东西的人](https://leenlbma.github.io/ai-notes/posts/01-still-building-by-hand/): 2026 年的 AI 手记：创造的成本、Demo 与交付、个人与组织效率、经验与人才，以及自己究竟想做什么。
